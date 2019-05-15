@@ -1,0 +1,258 @@
+* {
+margin: 0;
+padding: 0;
+font-family: HelveticaNeueCyr,roboto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 50px;
+}
+
+header {
+    order: 1;
+    width: 12%;
+    margin: auto;
+}
+
+header ul li {
+    list-style-type: none;
+    padding: 20px;
+    transform: rotate(270deg);
+    transition: all ease-in .5s;
+    margin: 70px auto;
+}
+
+header ul li:hover {
+    transform: rotate(0deg);
+}
+
+header ul li a {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.right {
+    order: 2;
+    width: 45%;
+    height: 750px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.right p {   
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px auto;
+}
+
+.top {
+    width: 38%;
+    height: 10px;
+    position: absolute;
+    background: #fff;
+    margin: 0px auto;
+}
+
+h1,h2,h3 {
+    line-height: 2.7;
+    margin: 20px auto;
+}
+
+b {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.who {
+    min-height: 750px;
+}
+
+.who:checked .right {
+    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+}
+
+.what {
+    min-height: 750px;
+    
+}
+
+.how {
+    min-height: 750px;
+    
+}
+
+#left {
+    order: 3;
+    width: 43%;
+}
+
+.logo-van {
+    position: absolute;
+    z-index: 2;
+    transition: all ease-in .5s;
+}
+
+.logo-van:hover img {
+    width: 70%; z-index: 1; opacity: .33;
+}
+
+.logo-van:hover .b-one img {
+    width: 30%; opacity: 1; z-index: 2;
+}
+.logo-van img {
+    width: 30%; max-width: 100%; transition: all ease-in-out .5s;
+}
+
+.b-one {
+    max-width: 100%; position: absolute; top: 0; z-index: 0;
+}
+
+#left a {
+    padding: 30px;
+}
+
+#left img {
+    
+}
+
+.b-one img {
+    opacity: .3; width: 60%; max-width: 100%; transition: all ease-in-out .5s;
+}
+
+.logo-be {
+    position: absolute;
+    z-index: 2;
+    transition: all ease-in .5s;
+}
+
+.logo-be img {
+    width: 30%; max-width: 100%; transition: all ease-in-out .5s;
+}
+.logo-be:hover img {
+    width: 66%; z-index: 1; opacity: .33;
+}
+
+.logo-be:hover .vandal-logo img {
+    width: 30%; opacity: 1; z-index: 2;
+}
+
+.vandal-logo {
+    max-width: 100%; position: absolute; top: 0; z-index: 0;
+}
+
+.vandal-logo img {
+     opacity: .3; width: 66%; max-width: 100%; transition: all ease-in-out .5s;
+}
+
+.right .no-scroll {
+    width: 38%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 46%;
+    background: transparent;
+}
+
+.what-we-can {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.do-icon {
+    width: 25%;
+    margin: 2.5%;
+    background: transparent;
+    text-align: center;
+}
+
+.do-icon img {
+    width: 96px;
+    height: 96px;
+}
+
+.gallery {
+    position:relative;
+    top: 30px;
+    width: 80%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img {
+    transition: all ease-in-out .3s;
+}
+.gallery-thubs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery-thubs img {
+    max-height: 100px;
+    border: 1px solid #fff;
+    margin: 2px;
+}
+
+.gallery-thubs img:hover {
+    max-height:90px;
+    border:5px solid #fff;
+}
+
+.gallery-preview {
+    
+}
+#preview  {
+    max-height: 450px;
+    margin: 20px auto;
+    border: 3px solid #fff;
+}
+
+.do-icon img {
+    transition: all ease-in .5s;
+}
+.do-icon:hover img {
+    transform: rotateY(360deg);
+}
+
+.academy-logo {
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 33px;
+    left: 33px;
+}
+
+.academy-logo p {
+    padding-top: 5px;
+    width: 500px;
+    margin-left: -300px;
+    opacity: 0;
+    color: #fff;
+    transition: all ease-in .7s;
+}
+
+.academy-logo:hover p {
+    transform: translateX(350px);
+    opacity: 1;
+}
